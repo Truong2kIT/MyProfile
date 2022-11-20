@@ -1,109 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="./images/logo_img.png" alt="logo" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Developer</p>
-                <h1>Hi, I'm <span>Truong</span> <br> from Viet Nam</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="./images/logo_img.png" alt="logo" class="logo" />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-crop" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-crop" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Developer</p>
+          <h1>
+            Hi, I'm <span>Truong</span> <br />
+            from Viet Nam
+          </h1>
         </div>
+      </div>
     </div>
     <!-- about -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./images/avt_img.png" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-titke">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit aliquid totam iusto eius
-                        blanditiis sint pariatur a officia aperiam nobis cumque impedit aut, qui numquam corporis optio
-                        beatae eum!</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skils')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skils">
-                        <ul>
-                            <li><span>Developer</span><br>Designing Web/App</li>
-                            <li><span>Web Developer</span><br>Designing Web/App</li>
-                            <li><span>App Developer</span><br>Designing Web/App</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2018</span><br>Designing Web/App</li>
-                            <li><span>2019</span><br>Designing Web/App</li>
-                            <li><span>2020</span><br>Designing Web/App</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2019</span><br>Lac Hong Universitiy</li>
-                            <li><span>2020</span><br>Designing Web/App</li>
-                            <li><span>2022</span><br>Designing Web/App</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/avt_img.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-titke">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit
+              aliquid totam iusto eius blanditiis sint pariatur a officia
+              aperiam nobis cumque impedit aut, qui numquam corporis optio
+              beatae eum!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skils')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skils">
+              <ul>
+                <li><span>Developer</span><br />Designing Web/App</li>
+                <li><span>Web Developer</span><br />Designing Web/App</li>
+                <li><span>App Developer</span><br />Designing Web/App</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2018</span><br />Designing Web/App</li>
+                <li><span>2019</span><br />Designing Web/App</li>
+                <li><span>2020</span><br />Designing Web/App</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2019</span><br />Lac Hong Universitiy</li>
+                <li><span>2020</span><br />Designing Web/App</li>
+                <li><span>2022</span><br />Designing Web/App</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- service -->
     <div id="service">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus esse corporis modi
-                        facilis recusandae tempore eaque a beatae, quos nulla asperiores eum dolores vel culpa adipisci
-                        expedita pariatur sit odit!</p>
-                    <a href="#">Xem thêm</a>
-                </div>
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Mobile App</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus esse corporis modi
-                        facilis recusandae tempore eaque a beatae, quos nulla asperiores eum dolores vel culpa adipisci
-                        expedita pariatur sit odit!</p>
-                    <a href="#">Xem thêm</a>
-                </div>
-                <div>
-                    <h2>Web App</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus esse corporis modi
-                        facilis recusandae tempore eaque a beatae, quos nulla asperiores eum dolores vel culpa adipisci
-                        expedita pariatur sit odit!</p>
-                    <a href="#">Xem thêm</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse corporis modi facilis recusandae tempore eaque
+              a beatae, quos nulla asperiores eum dolores vel culpa adipisci
+              expedita pariatur sit odit!
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Mobile App</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse corporis modi facilis recusandae tempore eaque
+              a beatae, quos nulla asperiores eum dolores vel culpa adipisci
+              expedita pariatur sit odit!
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web App</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse corporis modi facilis recusandae tempore eaque
+              a beatae, quos nulla asperiores eum dolores vel culpa adipisci
+              expedita pariatur sit odit!
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/word-img.jpg" alt="" />
+            <div class="layer">
+              <h3>Facebook</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                itaque, voluptatem enim perspiciatis incidunt nobis consectetur,
+                illo ratione harum quis provident, doloremque in ea quidem
+                molestias. Repellat blanditiis ullam soluta!
+              </p>
+              <a href="#"><i class="fa-solid fa-crop"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/word-img.jpg" alt="" />
+            <div class="layer">
+              <h3>Android App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                itaque, voluptatem enim perspiciatis incidunt nobis consectetur,
+                illo ratione harum quis provident, doloremque in ea quidem
+                molestias. Repellat blanditiis ullam soluta!
+              </p>
+              <a href="#"><i class="fa-solid fa-crop"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/word-img.jpg" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                itaque, voluptatem enim perspiciatis incidunt nobis consectetur,
+                illo ratione harum quis provident, doloremque in ea quidem
+                molestias. Repellat blanditiis ullam soluta!
+              </p>
+              <a href="#"><i class="fa-solid fa-crop"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Xem thêm</a>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <a href="#"><i class="fa-solid fa-crop"></i></a
+              >phantruong719@gmail.com
+            </p>
+            <p>
+              <a href="#"><i class="fa-solid fa-crop"></i></a>0333875939
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-solid fa-crop"></i></a>
+              <a href="#"><i class="fa-solid fa-crop"></i></a>
+              <a href="#"><i class="fa-solid fa-crop"></i></a>
+              <a href="#"><i class="fa-solid fa-crop"></i></a>
+            </div>
+            <a href="./images/myCV.pdf" download class="btn btn2">Dowload CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Tên của bạn"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email của bạn"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Lời nhắn gửi"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright: Phan Van Truong <i class="fa-solid fa-crop"></i></p>
+      </div>
     </div>
     <script src="./js/style.js"></script>
-</body>
-
+    <script>
+      
+    </script>
+    <script>
+     
+    </script>
+  </body>
 </html>
