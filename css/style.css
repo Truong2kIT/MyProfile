@@ -311,7 +311,7 @@ nav .fas{
 }
 @media screen and (max-width: 600px) {
     #header{
-        background-image: url(/images/bgr_mobil  e_img.png);
+        background-image: url(/images/bgr_mobile_img.png);
     }
     .header-text{
         margin-top: 100%;
@@ -367,4 +367,9 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
+}
+#msg{
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
 }
